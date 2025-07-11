@@ -1,0 +1,24 @@
+Docker Project
+
+1:create one dockerfile and docker compose file 
+2:We need three containers , web, nginx, db
+3:go inside docker-webapp  folder and run below commands
+
+To run the multiple containers 
+
+#sudo docker-compose up --build -d
+
+To remove or down the containers
+#sudo docker-compose down
+
+Verify the below command 
+
+#curl -X POST http://localhost:5000/api/register -d "name=Mahesh&city=Mumbai"
+
+
+Check the nginx logs 
+sudo docker logs $(sudo docker ps -qf "name=nginx")
+
+
+
+
